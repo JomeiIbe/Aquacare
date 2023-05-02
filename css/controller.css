@@ -1,0 +1,228 @@
+/*{-----------------------------------}*\
+    #RESET->(section)
+\*{-----------------------------------}*/
+  
+*,
+*::before,
+*::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      outline: none;
+      border: none;
+      text-decoration: none;
+      transition: .4s linear;
+      scroll-behavior: smooth !important;
+    }
+    
+    li { list-style: none; }
+
+a,
+img,
+span,
+data,
+button,
+ion-icon { display: block; }
+    
+a {
+      /* color: inherit; */
+      text-decoration: none;
+  }
+    
+ img { width: 100%; }
+    
+  button {
+  background: none;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+    }
+    
+  
+html {
+      font-family: var(--main-fnt);
+      font-size: 10px;
+      font-weight: 300;
+      scroll-behavior: smooth;
+      scroll-padding-top: 8rem;
+  }
+    
+body {
+  /* background-image: url("../images/bg1.jpg");    */     
+  background-repeat: no-repeat;
+      color: var(--white_a60);
+      font-size: 1.6rem;
+      line-height: 1.75;
+      overflow-x: hidden;
+      /* or */
+      /* html font-sie: 50%; */
+  }
+    
+body.active { overflow: hidden; }
+    
+:focus-visible { outline-offset: 4px; }
+    
+::selection {
+      background-color: var(--camel_a50);
+      color: var(--white);
+}
+    
+::-webkit-scrollbar { width: 10px; }
+  
+::-webkit-scrollbar-track { background-color: hsl(0, 0%, 98%); }
+  
+::-webkit-scrollbar-thumb { background-color: hsl(201, 100%, 88%); }
+  
+::-webkit-scrollbar-thumb:hover { background-color: hsl(196, 96%, 50%); }
+
+
+[data-reveal] {
+  opacity: 0;
+  /* transform: translateY(20px); */
+  transition: 0.75s ease;;
+}
+
+[data-reveal].reveal-left { transform: translateX(-20px) translateY(0); }
+
+[data-reveal].reveal-right { transform: translateX(20px) translateY(0); }
+
+[data-reveal].revealed {
+  opacity: 1;
+  transform: translate(0);
+}
+
+  
+section {
+  margin-top: 7rem;
+}
+
+.container{
+  max-width: 89%;
+  margin: 0px auto;
+  padding: 5px;
+}
+
+.j-bg-cover{
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+.j-btn {
+  display: flex;
+  display: -webkit-flex;
+  color: var(--white);
+  align-items: center;
+  max-width: max-content;
+  gap: 3px;
+  padding: 14px 1.3rem;
+  /* font-size: var(--fs-6); */
+  /* font-weight: var(--fw-500); */
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  line-height: 1;
+  border-radius: var(--radius-5);
+  transition: var(--transition-1);
+}
+
+.btn-main
+{ background-color: var(--aqua); }
+
+.btn-sec
+{ background-color: var(--rich-black-fogra-29); }
+
+.btn-gold{
+   background-color: var(--gold); 
+   border: none; 
+}
+
+.j-btn:is(:hover, :focus-visible) {
+  border: 1px solid var(--white);
+  color: var(--white);
+}
+
+.btn ion-icon { font-size: unset; }
+
+
+
+.glass{
+  overflow: hidden !important;
+  backdrop-filter: blur(8px);    
+  /* background: rgba(44, 39, 39, 0.281); */
+  background: rgba(195, 195, 195, 0.281);
+  padding: 8px 21px;
+}
+
+
+
+
+:root{
+  --main-fnt: "League Spartan", sans-serif;
+
+  --white: #fff;
+  /* --color-dynamic: #fff; */
+  --txt-white-20: #1616169c;
+  --txt-white-dim: #797878be;
+  /* --txt-white-20: #ffffff80; */
+  --aqua:  hsl(196, 96%, 50%);
+  --gold:  rgb(243, 247, 16);
+
+
+  --fs-body: 2.3rem;
+  --fs-header: 3.2rem;
+  --fs-largest: 4.4rem;
+  --fs-largestii: 7.4rem;
+  --fs-tag: 1.4rem;
+}
+
+.fs-body {
+  font-size: var(--fs-body);
+  color: var(--txt-white-20);
+}
+
+.fs-header {
+  font-size: var(--fs-header);
+}
+.fs-largest {
+  font-size: var(--fs-largest);
+}
+.fs-largestii {
+  font-size: var(--fs-largestii);
+}
+
+.fs-tag {
+  font-size: var(--fs-tag);
+}
+
+
+.white{
+  color: var(--color-dynamic);
+}
+
+.gold{
+  color: var(--gold);
+}
+
+.txt-white-dim{
+  color: var(--txt-white-dim);
+}
+
+
+@media screen and (max-width: 567px) {
+  .container{
+    max-width: 93%;
+    margin: 0px auto;
+    padding: 3px;
+  }
+
+  :root{
+  
+    --fs-body: 1.7rem;
+    --fs-header: 2.3rem;
+    --fs-largest: 3.4rem;
+    --fs-largestii: 5.2rem;
+    --fs-tag: 1.2rem;
+  }
+  
+}

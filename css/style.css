@@ -1,0 +1,346 @@
+@import url("./controller.css");
+@import url("./component.css");
+@import url("./JomeiCSS.css");
+
+/* Header */
+.header {
+ position: fixed;
+ top: 0; left: 0;   
+ background: transparent;
+ height: 30px;
+ width: 100%;
+ align-items: center !important;
+ z-index: 99;
+ padding: 0px 1px 8px 1px;
+ transition: all 0.4s;
+}
+.header.active {
+    background: var(--aqua);
+    transition: 0.2s;
+  height: 80px;
+ box-shadow: 0px 1rem 1.8rem rgba(0, 0, 0, 0.291);
+    /* background: rgb(1, 170, 182); */
+}
+.header.active  .nav-dat {
+    padding: 32px 19px 39px 1px;
+}
+
+.nav-dat, .logo{
+    color: var(--white);
+    padding: 12px 19px 39px 1px;
+    cursor: pointer;
+    font-size: 2.3rem;
+}
+.logo-img{
+    width: 120px;
+}
+.nav-dat:hover .nav-items{
+    transition: all 600ms ease-in-out;
+    display: inline-block;
+    opacity: 1;
+}
+.nav-items {
+ position: absolute;
+ display: none; 
+ left: 2.2rem;
+ background: var(--white);
+ padding: 25px 10px 35px 50px;
+ min-width: 22rem; 
+ max-height: 50rem; 
+ box-shadow: 0px 1rem 1.8rem rgba(0, 0, 0, 0.164);
+ border-radius: 50%;
+opacity: 0; 
+ transition: all 400ms ease-in;
+}
+.nav-items.active {
+   transition: all 300ms;
+    opacity: 1;
+   }
+.nav-items li 
+{
+  padding: 8px 35px;
+}
+ .nav-items li a {
+    font-size: 16px;
+    color: black;
+    position: relative;
+ }
+ .nav-items li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 50%; height: 2px;
+    background: var(--aqua);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 0.2s ease-in-out; 
+}
+
+.nav-items li a:hover::after {
+    transform: scaleX(1);    }
+ 
+ .nav-items li:hover a {
+    font-size: 18px;
+    color: var(--aqua);
+ }
+
+
+
+/* Hero */
+/* .hero {
+    background: -webkit-linear-gradient(rgba(),rgba(), url(""));
+    background: -moz-linear-gradient(rgba(),rgba(), url(""));
+    background: linear-gradient(rgba(),rgba(), url(""));
+} */
+.hero-content {
+    transform: translateY(10%);
+}
+/* Fishslide bgs */
+.slide1 {
+    background-image: linear-gradient(rgba(2, 15, 26, 0.716),rgba(2, 15, 26, 0.67)), url("../images/bg2.jpg");
+    height: 94vh;
+    object-fit: cover;
+}
+
+.slide2 {
+    background-image: linear-gradient(rgba(2, 15, 26, 0.716),rgba(2, 15, 26, 0.67)), url("../images/tropical-fish.jpg");
+    /* background-image: linear-gradient(rgba(9, 32, 50, 0.4),rgba(9, 32, 50, 0.4)), url("../images/tropical-fish.jpg"); */
+    height: 94vh;
+    object-fit: cover;
+}
+
+.slide3 {
+    background-image: linear-gradient(rgba(2, 15, 26, 0.716),rgba(2, 15, 26, 0.67)), url("../images/bg1.jpg");
+    height: 94vh;
+    object-fit: contain;
+  }
+  
+
+
+
+/* Owl Carousel */
+.owl-next, .owl-prev {
+    position: absolute;
+    top: 50%;
+    width: 60px !important;
+    height: 60px !important;
+    display: grid;
+    place-items: center;
+    /* background-color: rgba(255, 255, 255, 0.306) !important; */
+    font-size: 1.3rem !important;
+    font-weight: 700!important;
+    margin-top: -30px !important;
+    border-radius: .9em !important;
+    border: 1px solid #ffffff61 !important;
+    color:  #fff !important;
+    border-radius: 100% !important;
+
+   }
+.owl-next:hover, .owl-prev:hover {
+   background: var(--aqua) !important;
+}
+   
+   
+.owl-prev,.owl-prev
+{   right: 9px; }
+
+.owl-next {
+    right: 9px;
+    top: 62% !important;
+}
+   
+   
+.owl-dot.active span{
+     background-color: var(--main-color) !important;
+}
+   
+
+  
+/* About Us */
+/* here unfortunately holds power of most sides griding sstem */
+.eco-content.j-grid{
+    -ms-grid-columns: (minmax(16rem, 2fr))[auto-fit];
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 2fr));
+    gap: 40px; 
+}
+.ecosys-image{
+   min-width: 15rem;
+   border-bottom-left-radius: 3rem;
+   border-top-right-radius: 3rem;
+}
+.ecosys-image > img{
+   width: 100%; 
+   height: 100%; 
+}
+
+
+/* Fish Spices */
+ .fish-spices
+ { background: var(--white);
+padding: 3rem .5rem; }
+
+ .fsh-spi-content.j-grid
+ {  -ms-grid-columns: (minmax(16rem, 1fr))[auto-fit];
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 40px;
+}
+
+.fish-spimg {
+    width: 110px;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    flex: 1;
+}
+.fish-spimg > img{
+    height: 100%;
+    width: 100%;
+}
+
+/* Round FIsh */
+.radiInfo-image{
+    min-width: 15rem;
+    height:36rem;
+    border-bottom-left-radius: 3rem;
+   border-top-right-radius: 3rem;
+}
+.radiInfo-image > img{
+    width: 100%; 
+    height: 100%; 
+}
+.radiInfo-image2{
+    min-width: 25rem;
+    max-height: 32rem!important;
+    margin-left: 23px;
+}
+ 
+
+/* Number one  */
+.number-one{
+    /* background-image: url("../images/fsh7.png"); */
+    /* background-size: contain; */
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
+    /* opacity: .3; */
+}
+.number-one > .container > .content{
+    /* position: relative; */
+    background-image: url("../images/fsh7.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: .8;
+}
+.One {
+    font-size: 29rem;
+    font-weight: 500;
+    color: transparent; 
+    z-index: 6;
+    -webkit-text-stroke: 1px black;}
+    
+.one-span > span {
+    -webkit-text-stroke: 1px var(--aqua);
+}
+    
+/* Gallery Info */
+.gallery-startbox 
+{ 
+   column-gap: 30px ;
+   row-gap: 10px; 
+}
+.gallery-boxi, 
+.gallery-boxii { 
+   gap: 10px ;
+   row-gap: 10px; 
+}
+.gallery-image{
+   max-width: 37rem; 
+}
+.gallery-imageii{
+    max-width: 35rem; 
+ }
+ .gallery-imageiii{
+    max-width:  30rem; 
+    min-height:  240px; 
+    margin-top: 2rem;
+}
+ .gallery-imageiv{
+     min-height:  240px; 
+    max-width: 28rem;
+    overflow: visible; 
+    background: var(--aqua)
+ }
+ .gallery-imageiv > img{
+     object-fit: fill ;
+     -moz-object-fit: fill ;
+     -o-object-fit: fill ;
+ }
+ .gallery-imageiii > img,
+ .gallery-imageiv > img{
+     height:  100%; 
+    width: 100%; 
+}
+
+/* BLogs SLider */
+.overlay{
+  position: absolute;
+  top:0; left: 0;
+  background: -webkit-linear-gradient(to top,rgba(5, 5, 138, 0.61),rgba(6, 6, 139, 0.247)); 
+  width: 100%;
+  height: 100%;
+}
+.blog-meta{
+    bottom: 30px;
+    left: 15px;
+}
+
+/* Footer */
+footer{
+    background: rgb(3, 40, 126);
+    padding-top: 1.6rem;
+}
+
+.footer-wrapper.j-grid{
+   -ms-grid-columns: (minmax(16rem, 1fr))[auto-fit];
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 40px;
+}
+
+.footer-header{
+   font-size: var(--fs-body);
+   font-weight: 500; 
+   color: var(--white);
+}
+.footer-links > li
+{ color: var(--white);
+  margin-left: .6rem;
+}
+
+.footer-bttm {
+    padding: 5px 20px;
+    margin-top: 10px;
+}
+
+.social-tag,
+.footer-bottom { margin-top: 10px;}
+
+
+
+
+
+@media screen and (max-width: 789px){
+    
+.eco-content.j-grid {
+ grid-template-columns: 1fr;
+ }
+
+.footer-sub.j-flex{
+   flex-direction: column; 
+   row-gap: 12px;
+ } 
+
+.footer-links > li
+{ 
+  margin-left: initial;
+}
+}

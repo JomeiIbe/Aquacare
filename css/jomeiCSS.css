@@ -1,0 +1,144 @@
+.d-none {
+    display: none !important;
+}
+.block{
+    display: block;
+}
+
+.border-red{
+    border: 1px solid red;
+}
+
+.border-blue{
+    border: 1px solid blue;
+}
+.border-black{
+    border: 1px solid black;
+}
+.cursor-pointer{
+  cursor: pointer;
+}
+.cursor-grab{
+  cursor: grab;
+}
+    
+
+.j-bg-cover{
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+  
+
+.j-grid{
+    display: grid;
+    display: -moz-grid;
+    display: -webkit-grid;
+}
+
+.j-flex{
+    display: flex;
+    display: -webkit-flex;
+}
+.flex-column{
+    flex-direction: column;
+}
+
+
+/* JUSTIFY */
+.justify-between{
+    justify-content: space-between;
+}
+.justify-around{
+    justify-content: space-around;
+}
+.justify-center{
+    justify-content: center;
+}
+
+.place-center {
+    place-content: center;
+}
+
+.align-center{
+    align-items: center;
+}
+.align-start{
+    align-items: start;
+}
+.align-end{
+    align-items: end;
+}
+
+.txt-center {
+    text-align: center;
+}
+.txt-white {
+    color: white;
+}
+.txt-upcase {
+   text-transform: uppercase;
+}
+.txt-lowcase {
+   text-transform: lowercase;
+}
+
+
+/* POSITION */
+.pos-absolute{
+    position: absolute;
+}
+.pos-relative{
+    position: relative;
+}
+.pos-fixed{
+    position: fixed;
+}
+
+
+/* OVERFLOW */
+.overflow-hide{
+    overflow: hidden;
+}
+
+/* MARGINS */
+/* get form travasy tut file */
+.my-1{
+ margin:;
+}
+.my-2{
+ margin: 2rem 0rem;
+}
+
+.my-3{
+ margin: 3.2rem 0rem;
+}
+
+
+.mx-auto{
+ margin: 0 auto;
+}
+
+/* PADDINGS */
+/* get form travasy tut file */
+.py-1{
+    margin: 2.1rem 0;
+}
+   
+/* TOP PADDINGS */
+/* get form travasy tut file */
+.py-1{
+    margin
+}
+/* BOTTOM PADDINGS */
+/* get form travasy tut file */
+.py-1{
+    margin
+}
+
+/* get form travasy tut file */
+
+
+.w-100{
+  width: 100%;  
+}

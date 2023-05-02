@@ -1,0 +1,96 @@
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-box {
+    margin: 7% auto;
+    width: 400px;
+    color: #fff;
+    border-radius: 2.4rem;
+    position: relative;
+    transition: 100ms !important;
+    -webkit-transition-delay: 100ms;
+    transition-delay: 100ms;
+    border: 1px solid  rgba(189, 189, 189, 0.281);
+    background: rgba(255, 255, 255, 0.247);
+    backdrop-filter: blur(6px);
+    animation: modalopen .3s linear;
+  }
+  
+  @keyframes modalopen {
+    from {
+      opacity: 0;
+      transition: 100ms;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  
+.modal-body {
+    padding: 40px;
+  }
+  
+  .modal-body h3 {
+    font-weight: bold;
+    font-size: 32px;
+    text-align: center;
+  }
+  
+  .modal-body > #form-btn {
+    width: 100%;
+    margin-top: 30px;
+  }
+  
+  .modal .close {
+    position: absolute;
+    cursor: pointer;
+    height: 23px;
+    width: 23px;
+    top: 20px;
+    right: 20px;
+  }
+  
+  .modal .modal-footer {
+    backdrop-filter: blur(6px);
+    background: rgba(255, 255, 255, 0.247);
+    /* color: #333; */
+    padding: 10px 0;
+    border-top: rgba(238, 238, 238, 0.315) 1px solid;
+    text-align: center;
+  }
+  
+  .modal .modal-footer a {
+    color: steelblue;
+  }
+  
+  /* Form-control */
+  .form-control {
+    margin: 20px 0;
+  }
+  
+  .form-control label {
+    display: block;
+    text-transform: uppercase;
+  }
+  
+  .form-control input {
+    width: 100%;
+    border: 2px #ccc solid !important;
+    border-radius: 5px;
+    height: 50px;
+    background: rgba(240, 250, 247, 0.822);
+    padding: 5px;
+  }
+  
